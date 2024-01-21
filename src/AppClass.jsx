@@ -26,5 +26,20 @@ export default class AppClass extends Component{
     return data;
   }
 
-  // code here
+  render(){
+    let dataArr= this.imageData();
+    return (
+    <div>
+      <h1 className="heading">Kalvium Gallary</h1>
+      <div className="container">
+        {
+          dataArr.map((ele)=>{
+            return <img key={ele.id} src={ele.img} alt={ele.img}></img>
+          })
+        }
+      </div>
+
+    </div>
+    )
+  }
 }
