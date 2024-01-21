@@ -1,1 +1,20 @@
-/* add your styles here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    font-size: 29px;
+    margin-block: 30px;
+}
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 2%;
+    grid-column-gap: 1%;
+}
+.container img{
+    width: 100%;
+}
